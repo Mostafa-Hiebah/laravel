@@ -7,13 +7,13 @@ on:
 
 jobs:
   deployment:
-    runs-on: ubuntu-latest   
+    runs-on: ubuntu 22.04  
     steps:
       - name: pull code
         uses: actions/checkout@v2
 
       - name: php migrate
-        run: ls
+        run: php artisan migrate
         shell: bash
         
     
