@@ -12,11 +12,11 @@ jobs:
       - name: pull code
         uses: actions/checkout@v2
         
-      - name: php migrate
+      - name: list files/directories
         run: ls -lah
         shell: bash
         
-      - name: php migrate
+      - name: show current working directory
         run: pwd
         shell: bash
                 
